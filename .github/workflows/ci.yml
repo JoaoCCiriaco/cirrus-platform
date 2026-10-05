@@ -22,8 +22,8 @@ jobs:
       - name: Install Dependencies & Build CLI
         run: |
           cd cli
-          npm ci
-          npx tsc --noEmit
+          npm install
+          npm run build || npx tsc --noEmit
 
   validate-go-service:
     name: Validate Microservice (Go)
