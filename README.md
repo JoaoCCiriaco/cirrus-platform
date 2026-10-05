@@ -17,9 +17,9 @@ Modern engineering teams often face cognitive overload when managing complex Kub
 
 ### Key Metrics & Benefits
 
-* **🚀 Onboarding Time:** Reduced service scaffolding from days to **< 30 seconds**.
-* **🛡️ Governance & Security:** Built-in compliance, RBAC, and automated security scans.
-* **⚡ Operational Efficiency:** Standardized Terraform IaC modules and Kubernetes Helm deployments.
+* **Onboarding Time:** Reduced service scaffolding from days to **< 30 seconds**.
+* **Governance & Security:** Built-in compliance, RBAC, and automated security scans.
+* **Operational Efficiency:** Standardized Terraform IaC modules and Kubernetes Helm deployments.
 
 ---
 
@@ -40,7 +40,7 @@ graph TD
 
 ---
 
-## 🛠️ Tech Stack & Ecosystem
+## Tech Stack & Ecosystem
 
 | Layer | Technologies |
 | :--- | :--- |
