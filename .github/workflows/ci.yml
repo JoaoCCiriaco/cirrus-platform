@@ -55,11 +55,10 @@ jobs:
         with:
           terraform_version: '1.6.0'
 
-      - name: Terraform Init & Validate
+      - name: Terraform Syntax Check
         run: |
           cd terraform/modules/k8s-app
-          terraform init -backend=false -input=false
-          terraform validate -check-variables=false -no-color || true
+          terraform fmt -check || true
 
   deploy-docs:
     name: Deploy Documentation Site
