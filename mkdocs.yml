@@ -17,6 +17,6 @@ theme:
     - content.code.copy
 
 nav:
-  - Visão Geral: README.md
+  - Visão Geral: index.md
   - Arquitetura:
-      - Modelo C4: docs/architecture/C4_MODEL.md
+      - Modelo C4: architecture/C4_MODEL.md
