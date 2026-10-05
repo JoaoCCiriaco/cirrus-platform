@@ -47,12 +47,14 @@ A arquitetura da Cirrus Platform é dividida em três pilares principais:
 * Terraform 1.6+
 
 ### Instalação
+
 ```bash
 # Clonar o repositório
-git clone [https://github.com/JoaoCCiriaco/cirrus-platform.git](https://github.com/JoaoCCiriaco/cirrus-platform.git)
+git clone https://github.com/JoaoCCiriaco/cirrus-platform.git
 cd cirrus-platform
 
 # Compilar a CLI
 cd cli
 npm install
 npm run build
+```
