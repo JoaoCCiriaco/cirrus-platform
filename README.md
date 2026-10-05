@@ -23,7 +23,7 @@ Modern engineering teams often face cognitive overload when managing complex Kub
 
 ---
 
-## 🏛️ High-Level System Architecture
+## High-Level System Architecture
 
 ```mermaid
 graph TD
