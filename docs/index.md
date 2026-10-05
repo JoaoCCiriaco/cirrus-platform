@@ -5,50 +5,51 @@
 # Cirrus Platform
 > **Enterprise Internal Developer Platform (IDP)**
 
-A **Cirrus Platform** é uma Plataforma Interna de Desenvolvimento (*Internal Developer Platform*) projetada para padronizar o ciclo de entrega de software, abstrair a complexidade de infraestrutura em nuvem e acelerar a produtividade de equipes de engenharia em ambientes *cloud-native*.
+**Cirrus Platform** is an Internal Developer Platform designed to standardize the software delivery lifecycle, abstract cloud infrastructure complexity, and accelerate engineering team productivity in cloud-native environments.
 
 ---
 
-## Visão Geral e Objetivos
+## Overview and Goals
 
-* **Redução de Carga Cognitiva:** Abstração de configurações complexas de Kubernetes e Terraform para os desenvolvedores.
-* **Auto-Serviço de Infraestrutura:** Provisionamento padronizado de recursos através de interfaces unificadas.
-* **Governança e Conformidade:** Garantia de aplicação das melhores práticas de arquitetura, segurança e conformidade desde a concepção do serviço.
-* **Padronização de Entrega:** Automação do ciclo de build, validação e implantação.
+* **Cognitive Load Reduction:** Abstraction of complex Kubernetes and Terraform configurations for developers.
+* **Infrastructure Self-Service:** Standardized resource provisioning through unified interfaces.
+* **Governance and Compliance:** Ensuring architectural, security, and compliance best practices are applied by default.
+* **Delivery Standardization:** Automation of build, validation, and deployment pipelines.
 
 ---
 
-## Componentes da Plataforma
+## Platform Components
 
-A arquitetura da Cirrus Platform é dividida em três pilares principais:
+The Cirrus Platform architecture is divided into three main pillars:
 
 * **Cirrus CLI (`cli/`):**
-  Interface de linha de comando desenvolvida em TypeScript / Node.js responsável por abstrair interações com a infraestrutura e padronizar o fluxo de trabalho do desenvolvedor.
+  Command-line interface built with TypeScript / Node.js responsible for abstracting infrastructure interactions and standardizing the developer workflow.
 * **Core API / Orchestrator (`payment-api/`):**
-  Microserviço desenvolvido em Go (Golang) focado em alta performance, responsável pelo processamento, validação e orquestração das requisições de serviço.
-* **Módulos de IaC & Kubernetes (`terraform/` e `k8s/`):**
-  Declarações estruturadas em Terraform e manifestos Kubernetes para provisionamento automatizado de ambientes.
+  High-performance microservice developed in Go (Golang) handling processing, validation, and orchestration of service requests.
+* **IaC & Kubernetes Modules (`terraform/` and `k8s/`):**
+  Structured Terraform declarations and Kubernetes manifests for automated environment provisioning.
 
 ---
 
-## Fluxo de Execução
+## Execution Flow
 
-1. O desenvolvedor solicita um recurso via **Cirrus CLI**.
-2. A CLI encaminha a definição declarativa para o **Core API**.
-3. O Core API valida os parâmetros de governança e aciona o provisionamento via **Terraform** e **Kubernetes**.
+1. The developer requests a resource via **Cirrus CLI**.
+2. The CLI forwards the declarative definition to the **Core API**.
+3. The Core API validates governance parameters and triggers provisioning via **Terraform** and **Kubernetes**.
 
 ---
 
-## Guia de Início Rápido
+## Quick Start Guide
 
-### Pré-requisitos
+### Prerequisites
 * Node.js 20+
 * Go 1.22+
 * Terraform 1.6+
 
-### Instalação
+### Installation
 
-#### 1. Clonar o repositório
+#### 1. Clone the repository
 ```bash
-git clone [https://github.com/JoaoCCiriaco/cirrus-platform.git](https://github.com/JoaoCCiriaco/cirrus-platform.git)
+git clone https://github.com/JoaoCCiriaco/cirrus-platform.git
 cd cirrus-platform
+```

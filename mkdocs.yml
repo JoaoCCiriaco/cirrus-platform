@@ -16,6 +16,18 @@ theme:
     - search.suggest
     - content.code.copy
 
+plugins:
+  - search
+  - i18n:
+      default_language: pt
+      languages:
+        pt:
+          name: Português
+          build: true
+        en:
+          name: English
+          build: true
+
 nav:
   - Visão Geral: index.md
   - Arquitetura:
