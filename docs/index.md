@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/hero-logo.png" alt="Cirrus Platform Logo" width="220">
+  <img src="assets/hero-logo.png" alt="Cirrus Platform Logo" width="500">
 </p>
 
 # Cirrus Platform
