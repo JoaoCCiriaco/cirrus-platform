@@ -1,0 +1,22 @@
+site_name: Cirrus Platform
+site_description: Enterprise Internal Developer Platform (IDP)
+site_url: https://joaocciriaco.github.io/cirrus-platform/
+
+theme:
+  name: material
+  logo: docs/assets/logo.png
+  favicon: docs/assets/logo.png
+  palette:
+    scheme: default
+    primary: indigo
+    accent: blue
+  features:
+    - navigation.indexes
+    - navigation.sections
+    - search.suggest
+    - content.code.copy
+
+nav:
+  - Overview: README.md
+  - Architecture:
+      - C4 Model: docs/architecture/C4_MODEL.md
