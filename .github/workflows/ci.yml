@@ -74,9 +74,9 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Install MkDocs Material
+      - name: Install Dependencies
         run: |
-          pip install mkdocs-material
+          pip install mkdocs-material mkdocs-static-i18n
 
       - name: Deploy Docs to GitHub Pages
         run: |
